@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button, textarea, select, option {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-ms-reveal {
+  display: none;
+}
+
+/**
+ * イージングプロパティ
+ * https://github.com/dmnsgn/sass-easing
+ */
+/**
+ * メディアクエリ
+ * @param {string} $mode - max または min
+ * @param {number} $width - 設定値
+ */
+/**
+ * メディアクエリ PC
+ * @param {number} [$width:$breakpoin] - 設定値
+ */
+/**
+ * メディアクエリ SP
+ * @param {number} [$width:$breakpoin] - 設定値
+ */
+/**
+ * メディアクエリによるIE11ハック
+ */
+/**
+ * Google Fonts の読み込み
+ * @param {string} $family - フォント名（要URLエンコード）
+ * @param {array} [$weights:(400,700)] - ウェイト
+ */
+/**
+ * Noto Sans JP
+ * @param {array} [$weights:(400,700)] - ウェイト
+ */
+/**
+ * Noto Serif JP
+ * @param {array} [$weights:(400,700)] - ウェイト
+ */
+/**
+ * VW計算
+ * @param {string} $property  - プロパティ
+ * @param {number} $value - 基準となる値
+ * @param {number} $basewidth - 基準となるウィンドウ幅
+ * @param {number} [$maxwidth:0] - 拡大を停止するウィンドウ幅
+ * @param {number} [$minwidth:0] - 縮小を停止するウィンドウ幅
+ */
+/**
+ * 三角形
+ * @param {string} $direction - 三角の向き 上:T / 下:B / 左:L / 右:R
+ * @param {number} $w - 幅
+ * @param {number} $h - 高さ
+ * @param {string} $color - 色
+ */
+/**
+ * ローディングアニメーション
+ * @param {number} $size - 円のサイズ
+ * @param {number} $thickness - 円の枠線の太さ
+ * @param {string} $backcolor - 円の色
+ * @param {string} $forecolor - 円の強調色
+ * @param {string} [$duration=1] - アニメーションのスピード（単位は秒:s）
+ */
+body {
+  min-width: 320px;
+  color: #000;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #100;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+@fa-font-path : "../font";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+* img {
+  height: auto;
+  max-width: 50%;
+}
+* section {
+  height: 100vh;
+  background-image: url(../img/sun-flower.png);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+@media screen and (max-width: 767px) {
+  * section {
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    list-style: none;
+  }
+}
+* section li .fa-twitter {
+  color: aqua;
+}
+* section li .fa-instagram {
+  color: pink;
+}
+* section li .fa-github {
+  color: blueviolet;
+}

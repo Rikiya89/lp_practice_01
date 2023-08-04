@@ -1,0 +1,53 @@
+@use "../global" as *;
+@fa-font-path: "../font";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    img {
+        height: auto;
+        max-width: 50%;
+    }
+
+    section {
+        height: 100vh;
+        background-image: url(../img/sun-flower.png);
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 7rem;
+        margin-bottom: 2rem;
+        list-style: none;
+
+        @include SP {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            list-style: none;
+        }
+
+        li {
+            .fa-twitter {
+                color: aqua;
+            }
+
+            .fa-instagram {
+                color: pink;
+            }
+
+            .fa-github {
+                color: blueviolet;
+            }
+        }
+    }
+
+}
